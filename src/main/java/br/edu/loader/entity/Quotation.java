@@ -27,6 +27,8 @@ public class Quotation {
     @Column(name = "company")
     private String company;
 
+    @Index
+    @Id
     @Column(name = "tradingdate")
     private Date tradingDate;
 
