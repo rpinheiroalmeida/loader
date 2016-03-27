@@ -20,7 +20,7 @@ public enum CassandraManager {
     {
         easyCassandraManager = new EasyCassandraManager(ClusterInformation.create().addHost(
                 PropertiesUtil.INSTANCE.getProperty(LOADER_ADDRESS_SERVER)
-        ).withKeySpace("bmfbovespav3"));
+        ).withKeySpace("bmfbovespa"));
 
         easyCassandraManager.addFamilyObject(Quotation.class);
         persistence = easyCassandraManager.getPersistence();
